@@ -20,6 +20,11 @@ HST-Light is a novel multi-agent reinforcement learning framework for adaptive t
 git clone https://github.com/yourusername/HST-Light.git
 cd HST-Light
 pip install -r requirements.txt
+export SUMO_HOME=/your python env path/lib/python3.6/site-packages/sumo
+export PYTHONPATH=${PYTHONPATH}:/your own folder/root directory of this folder
+cd onpolicy/envs/sumo_files_marl
+unzip scenarios.zip
+cd ../../../
 ```
 
 ## Project Structure
@@ -44,6 +49,7 @@ python onpolicy/scripts/train/train_sumo.py
 ```
 
 ### Evaluation
+Comment out for training content and uncomment for evalation content.
 ```bash
 python onpolicy/scripts/train/train_sumo.py
 ```
